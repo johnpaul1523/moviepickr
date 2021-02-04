@@ -19,7 +19,7 @@
 
   <header>
     <section class="container">
-      <a href="#"><h1>What Are We Watching Tonight? 🍿🎥🎬</h1></a>
+      <a href="#" onClick="window.location.reload();"><h1>What Are We Watching Tonight? 🍿🎥🎬</h1></a>
       <!--<nav>
         <ul>
           <li><a href="#">News Source: <span>Source Name</span></a>
@@ -41,11 +41,10 @@
   <div id="popUp" class="loader hidden">
     <a href="#" class="closePopUp">X</a>
     <div class="container">
-      <h1>Article title here</h1>
+      <h1>Oops! We Can't Find A Movie That Fits Your Criteria. 🙁</h1>
       <p>
-        Article description/content here.
+        Please try again.
       </p>
-      <a href="#" class="popUpAction" target="_blank">Read more from source</a>
     </div>
   </div>
   <div id="main" class="container">
@@ -55,7 +54,7 @@
     </ul>
   </div>
   <div id="timePeriod" class="container">
-    <h1 style="text-align:center;color:#227C9D;">How Old Should the Movie Be?</h1>
+    <h1 style="text-align:center;color:#227C9D;">Which Decade?</h1>
     <ul>
       <li id="sixty"><a>60's</a></li>
       <li id="seventy"><a>70's</a></li>
@@ -76,7 +75,7 @@
     </ul>
   </div>
   <div id="averageRating" class="container">
-    <h1 style="text-align:center;color:#227C9D;">How Good (Or Bad) Should the Movie Be?</h1>
+    <h1 style="text-align:center;color:#227C9D;">What's The Minimum Rating You Can Deal With?</h1>
     <ul>
 
     </ul>
@@ -86,6 +85,7 @@
     <img src="#"></img>
     <iframe src="" width="575" height="315"></iframe>
     <ul></ul>
+    <button onClick="window.location.reload();">Find Another Movie!</button>
   </div>
   <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase.js"></script>

@@ -183,3 +183,12 @@ iframe {
 #movieChoice ul li p{
 font-weight: bold;
 }
+
+#movieChoice button {
+  text-align: center;
+  width: 50%;
+  height: 5vw;
+  left: 21vw;
+  position: relative;
+  margin-bottom: 2vw;
+}

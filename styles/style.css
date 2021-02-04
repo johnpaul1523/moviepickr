@@ -12,6 +12,7 @@
   width: 100%;
   height: 100%;
   background: #fff;
+  z-index: 1000;
 }
 
 #popUp .closePopUp {
@@ -19,7 +20,7 @@
   top: 20px;
   right: 20px;
   font-size: 40px;
-  color: #fe052c;
+  color: #227C9D;
   text-decoration: none;
 }
 
@@ -30,7 +31,7 @@
 }
 
 #popUp.loader .container {
-  display: none;
+  /*display: none;*/
 }
 
 #popUp .container {
@@ -39,6 +40,11 @@
 
 #popUp h1 {
   margin-bottom: 0;
+  color: #227C9D;
+}
+
+#popUp p {
+  color: #227C9D;
 }
 
 #popUp .popUpAction {

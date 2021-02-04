@@ -161,7 +161,13 @@ $('#averageRating').css('display','none');
                 return;
             }
             console.log(data);
-
+            var noResults = data.total_results;
+            if(noResults === 0){
+                $('#popUp').removeClass('hidden');
+                $('#movieChoice').css('display','none');
+                $('#averageRating').css('display','block');
+                console.log(noResults);
+            } 
             let finalMovieTitle = document.getElementsByTagName('h2');
             let finalMovieDescription = $('p');
             let finalMoviePoster = document.getElementsByTagName('img');
@@ -174,7 +180,6 @@ $('#averageRating').css('display','none');
             $('#averageRating').css('display','none');
             localStorage.clear();
             console.log(data);
-            
             let finalMovieId = movieArray.id; 
             let $finalMovieActors = $.getJSON('https://api.themoviedb.org/3/movie/' + finalMovieId + '/credits?api_key=6abd7b14a235142a19b71c67ec165bb6');
             console.log($finalMovieActors);
