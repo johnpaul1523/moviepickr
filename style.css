@@ -1,0 +1,185 @@
+.right {
+  float: right;
+}
+
+body {
+  background: #FEF9EF;
+}
+
+#main.container ul li {
+  position: relative;
+  display: flex;
+  width: 25%;
+  padding: 1%;
+  border: 1px solid #227C9D;
+  margin: 1%;
+  text-align: center;
+  cursor: pointer;
+  color: #227C9D;
+}
+
+#main.container ul li:hover {
+  background: #227C9D;
+  color: #FE6D73;
+}
+
+#timePeriod.container ul li:hover {
+  background: #227C9D;
+  color: #FE6D73;
+}
+
+#maxLength.container ul li:hover {
+  background: #227C9D;
+  color: #FE6D73;
+}
+
+#averageRating.container ul li:hover {
+  background: #227C9D;
+  color: #FE6D73;
+}
+
+#main.container ul li a{
+  width: 100%;
+}
+
+#main.container ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  left: 6vw;
+}
+
+#timePeriod {
+  margin-top: 65px;
+  display:none;
+}
+
+#timePeriod.container ul li {
+  position: relative;
+  display: flex;
+  width: 25%;
+  padding: 1%;
+  border: 1px solid #227C9D;
+  margin: 1%;
+  text-align: center;
+  cursor: pointer;
+  color: #227C9D;
+}
+
+#timePeriod.container ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  left: 6vw;
+}
+
+#timePeriod.container ul li a{
+  width: 100%;
+}
+
+#maxLength {
+  margin-top: 65px;
+  display:none;
+}
+
+#maxLength.container ul li {
+  position: relative;
+  display: flex;
+  width: 25%;
+  padding: 1%;
+  border: 1px solid #227C9D;
+  margin: 1%;
+  text-align: center;
+  cursor: pointer;
+  color: #227C9D;
+}
+
+#maxLength.container ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  left: 6vw;
+}
+
+#maxLength.container ul li a{
+  width: 100%;
+}
+
+#averageRating {
+  margin-top: 65px;
+  display:none;
+}
+
+#averageRating.container ul li {
+  position: relative;
+  display: flex;
+  width: 25%;
+  padding: 1%;
+  border: 1px solid #227C9D;
+  margin: 1%;
+  text-align: center;
+  cursor: pointer;
+  color: #227C9D;
+}
+
+#averageRating.container ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  left: 6vw;
+}
+
+#averageRating.container ul li a{
+  width: 100%;
+}
+
+#movieChoice p {
+  font-size: 1rem;
+}
+
+#movieChoice img {
+  width: 25%;
+}
+
+iframe {
+  float: right;
+}
+
+#movieChoice {
+  margin-top: 65px;
+  display:none;
+}
+
+#movieChoice ul{
+  display: flex;
+}
+
+#movieChoice ul li{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1%;
+}
+
+#movieChoice ul li img{
+  width: 100%;
+}
+
+#movieChoice ul li p{
+font-weight: bold;
+}

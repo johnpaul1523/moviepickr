@@ -1,0 +1,114 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>What Are We Watching Tonight?</title>
+  <link rel="stylesheet" media="screen" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/normalize.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="styles/html5bp.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="styles/style.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <header>
+    <section class="container">
+      <a href="#"><h1>What Are We Watching Tonight? 🍿🎥🎬</h1></a>
+      <!--<nav>
+        <ul>
+          <li><a href="#">News Source: <span>Source Name</span></a>
+            <ul>
+                <li><a href="#">UK Sports</a></li>
+                <li><a href="#">US Sports</a></li>
+                <li><a href="#">Ireland Sports</a></li>
+            </ul>
+          </li>
+        </ul>
+        <section id="search">
+          <input type="text" name="name" value="">
+          <a href="#"><img src="images/search.png" alt="" /></a>
+        </section>
+      </nav>-->
+      <div class="clearfix"></div>
+    </section>
+  </header>
+  <div id="popUp" class="loader hidden">
+    <a href="#" class="closePopUp">X</a>
+    <div class="container">
+      <h1>Article title here</h1>
+      <p>
+        Article description/content here.
+      </p>
+      <a href="#" class="popUpAction" target="_blank">Read more from source</a>
+    </div>
+  </div>
+  <div id="main" class="container">
+    <h1 style="text-align:center;color:#227C9D;">Pick Your Genre First!</h1>
+    <ul>
+
+    </ul>
+  </div>
+  <div id="timePeriod" class="container">
+    <h1 style="text-align:center;color:#227C9D;">How Old Should the Movie Be?</h1>
+    <ul>
+      <li id="sixty"><a>60's</a></li>
+      <li id="seventy"><a>70's</a></li>
+      <li id="eighty"><a>80's</a></li>
+      <li id="ninety"><a>90's</a></li>
+      <li id="twenties"><a>2000's</a></li>
+      <li id="twentyTens"><a>2010's</a></li>
+      <li id="twentyTwenties"><a>2020's</a></li>
+    </ul>
+  </div>
+  <div id="maxLength" class="container">
+    <h1 style="text-align:center;color:#227C9D;">How Much Time Do You Have?</h1>
+    <ul>
+      <li id="ninetyMinutes"><a>90 minutes</a></li>
+      <li id="oneTwenty"><a>120 minutes</a></li>
+      <li id="oneTwentyHalf"><a>150 minutes</a></li>
+      <li id="threeHours"><a>180 minutes</a></li>
+    </ul>
+  </div>
+  <div id="averageRating" class="container">
+    <h1 style="text-align:center;color:#227C9D;">How Good (Or Bad) Should the Movie Be?</h1>
+    <ul>
+
+    </ul>
+  </div>
+  <div id="movieChoice" class="container">
+    <h2 style="text-align:center;color:#227C9D;"></h2>
+    <img src="#"></img>
+    <iframe src="" width="575" height="315"></iframe>
+    <ul></ul>
+  </div>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyABtRxkuGfDcu9VYaOjojD1SCFtHlqIJ88",
+    authDomain: "ken-saidit-jp.firebaseapp.com",
+    databaseURL: "https://ken-saidit-jp-default-rtdb.firebaseio.com",
+    projectId: "ken-saidit-jp",
+    storageBucket: "ken-saidit-jp.appspot.com",
+    messagingSenderId: "11095247697",
+    appId: "1:11095247697:web:debfb83f14af12b8fe6170"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+  <script type="text/javascript" src="vendor/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
