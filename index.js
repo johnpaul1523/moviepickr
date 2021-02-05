@@ -214,7 +214,7 @@ setTimeout(function() {
                             let movieTrailer = dataThree.results;
                             let movieFrame = document.getElementsByTagName('iframe');
                             $(movieFrame).attr('src', 'https://www.youtube.com/embed/' + movieTrailer[0].key);
-                            $(movieFrame).after(finalMovieDescription);
+                            $('#movieChoice ul').before(finalMovieDescription);
                             //$(finalMoviePoster).after(movieFrame);  
                         });
 

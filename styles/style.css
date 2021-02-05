@@ -241,3 +241,109 @@ nav ul ul li {
   text-align: right;
   color: #097fb2;
 }
+
+@media only screen and (min-width: 787px) {
+.hidden-desktop {
+  display:none !important;
+}
+}
+
+
+@media only screen and (max-width: 786px) {
+  
+  h1 {
+    font-size: 1em;
+    margin: 0.67em 0;
+  }
+  header h1 {
+    color: #fff;
+    padding: 10px 2%;
+    margin: 0;
+    width: 100%;
+    float: left;
+    padding-left: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  .container ul li a {
+    width: 100%;
+    font-size: 12px;
+  }
+  #main,#timePeriod,#averageRating,#maxLength,#movieChoice {
+    margin-top: 45px !important;
+  }
+  .container ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  #movieChoice h2 {
+    font-size: 1rem;
+    text-align: center;
+    color: #227C9D;
+    position: relative;
+    float: right;
+    width: 50%;
+    top: 20vw;
+  }
+  #movieChoice ul li {
+    display: flex;
+    width: 48%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1%;
+  }
+  #movieChoice img {
+    width: 45% !important;
+    float: left;
+    /* display: inline-block; */
+    position: relative;
+    margin-bottom: 25px;
+  }
+  #movieChoice p {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  #movieChoice button {
+    text-align: center;
+    width: 50%;
+    height: 8vw !important;
+    position: relative;
+    margin-bottom: 12vw;
+    margin: 0 auto;
+    display: block;
+  }
+  iframe {
+    float: none !important;
+    width: 320px;
+    margin: 0 auto;
+    display: block;
+  }
+  #movieChoice ul li img {
+    width: 100% !important;
+    float: left;
+    /* display: inline-block; */
+    position: relative;
+    margin-bottom: 20;
+  }
+  
+  #movieChoice ul li {
+    display: flex;
+    width: 45% !important;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1%;
+  }
+  .hidden-mobile {
+    display:none !important;
+  }
+}
