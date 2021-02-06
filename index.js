@@ -33,16 +33,14 @@ $movieGenres.done(function(data) {
         $('#main ul').append(genreList);
         $(genreList).append(genreLinks);
     }
-});
 
-setTimeout(function() {
     $("#main li").click(function() {
         let currentGenre = $(this).attr('id');
         localStorage.setItem('genre', currentGenre);
         $('#timePeriod').css('display', 'block');
         $('#main').css('display', 'none');
     });
-}, 1000);
+});
 
 setTimeout(function() {
 
@@ -105,12 +103,12 @@ setTimeout(function() {
         localStorage.setItem('time', time);
     });
     $("#oneTwenty").click(function() {
-        var time = Math.floor((Math.random() * 29) + 90);
+        var time = Math.floor((Math.random() * 19) + 100);
         console.log(time);
         localStorage.setItem('time', time);
     });
     $("#oneTwentyHalf").click(function() {
-        var time = Math.floor((Math.random() * 59) + 90);
+        var time = Math.floor((Math.random() * 49) + 100);
         console.log(time);
         localStorage.setItem('time', time);
     });
@@ -153,7 +151,7 @@ setTimeout(function() {
                     var finalYear = parseInt(localStorage.year);
                     var finalTime = parseInt(localStorage.time);
                     var randomPage = Math.floor((Math.random() * 1) + 1);
-                    let $finalMoviePick = $.getJSON('https://api.themoviedb.org/3/discover/movie?api_key=6abd7b14a235142a19b71c67ec165bb6&language=en-US&vote_count.gte=10&vote_average.gte=' + finalRating + '&with_genres=' + finalGenre + '&primary_release_year=' + finalYear + '&with_runtime.lte=' + finalTime + '&with_original_language=en&page=' + randomPage);
+                    let $finalMoviePick = $.getJSON('https://api.themoviedb.org/3/discover/movie?api_key=6abd7b14a235142a19b71c67ec165bb6&language=en-US&vote_count.gte=10&vote_average.gte=' + finalRating + '&with_genres=' + finalGenre + '&primary_release_year=' + finalYear + '&with_runtime.lte=' + finalTime + '&with_runtime.gte=80&with_original_language=en&page=' + randomPage);
                     console.log($finalMoviePick);
 
                     $finalMoviePick.done(function(data) {
